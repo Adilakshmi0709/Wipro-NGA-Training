@@ -1,0 +1,77 @@
+
+//Product Catalog - Insert
+
+db.products.insertOne({
+  name: "Wireless Mouse",
+  category: "Electronics",
+  price: 899.00,
+  stock: 120,
+  attributes: {
+    brand: "Logitech",
+    connectivity: "Bluetooth",
+    color: "Black"
+  }
+})
+
+db.products.insertOne({
+  name: "Cotton T-Shirt",
+  category: "Clothing",
+  price: 499.00,
+  stock: 250,
+  attributes: {
+    size: "M",
+    color: "Blue",
+    material: "Cotton"
+  }
+})
+
+db.products.insertOne({
+  name: "The Alchemist",
+  category: "Books",
+  price: 299.00,
+  stock: 75,
+  attributes: {
+    author: "Paulo Coelho",
+    genre: "Fiction",
+    language: "English"
+  }
+})
+
+
+//Customer Orders - Insert
+
+db.orders.insertOne({
+  userId: "user001",
+  orderDate: "2025-08-08",
+  items: [
+    { productId: "prod001", quantity: 2, price: 899.00 },
+    { productId: "prod002", quantity: 1, price: 299.00 }
+  ],
+  totalAmount: 2097.00,
+  status: "Shipped"
+})
+
+
+//User Authentication - Insert
+
+db.users.insertOne({
+  username: "ammu",
+  email: "ammu@example.com",
+  passwordHash: "hashed_password_here",
+  createdAt: "2025-08-01"
+})
+
+
+//Some Queries
+
+db.products.find({ category: "Electronics" })
+db.products.find({ price: { $lt: 500 } })
+db.products.find({ stock: { $lte: 0 } })
+db.products.find({ "attributes.brand": "Logitech" })
+db.orders.find({ userId: "user001" })
+db.orders.find({ orderDate: { $gte: "2025-08-01" } })
+db.orders.find({ status: "Shipped" })
+db.orders.find({ "items.productId": "prod001" })
+db.users.findOne({ email: "ammu@example.com" })
+db.users.findOne({ username: "ammu" })
+db.users.find({ createdAt: { $gte: "2025-08-01" } })
