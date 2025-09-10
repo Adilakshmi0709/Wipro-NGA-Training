@@ -1,0 +1,8 @@
+S:\Wipro\Day 26\RazorPagesApp\RazorPagesApp\obj\Debug\net8.0\rpswa.dswa.cache.json
+S:\Wipro\Day 26\RazorPagesApp\RazorPagesApp\obj\Debug\net8.0\RazorPagesApp.GeneratedMSBuildEditorConfig.editorconfig
+S:\Wipro\Day 26\RazorPagesApp\RazorPagesApp\obj\Debug\net8.0\RazorPagesApp.AssemblyInfoInputs.cache
+S:\Wipro\Day 26\RazorPagesApp\RazorPagesApp\obj\Debug\net8.0\RazorPagesApp.AssemblyInfo.cs
+S:\Wipro\Day 26\RazorPagesApp\RazorPagesApp\obj\Debug\net8.0\RazorPagesApp.csproj.CoreCompileInputs.cache
+S:\Wipro\Day 26\RazorPagesApp\RazorPagesApp\obj\Debug\net8.0\RazorPagesApp.MvcApplicationPartsAssemblyInfo.cache
+S:\Wipro\Day 26\RazorPagesApp\RazorPagesApp\obj\Debug\net8.0\RazorPagesApp.RazorAssemblyInfo.cache
+S:\Wipro\Day 26\RazorPagesApp\RazorPagesApp\obj\Debug\net8.0\RazorPagesApp.RazorAssemblyInfo.cs

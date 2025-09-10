@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "JUAA7qvNS/k=",
+  "success": true,
+  "projectFilePath": "S:\\Wipro\\Day 25\\core_razor_recap\\core_razor_recap\\core_razor_recap.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rushikesh\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.19\\microsoft.windowsdesktop.app.ref.8.0.19.nupkg.sha512",
+    "C:\\Users\\rushikesh\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.19\\microsoft.netcore.app.ref.8.0.19.nupkg.sha512",
+    "C:\\Users\\rushikesh\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.19\\microsoft.aspnetcore.app.ref.8.0.19.nupkg.sha512",
+    "C:\\Users\\rushikesh\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.19\\microsoft.netcore.app.host.win-x64.8.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}

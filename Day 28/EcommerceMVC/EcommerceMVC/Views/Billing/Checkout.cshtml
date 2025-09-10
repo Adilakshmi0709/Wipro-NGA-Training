@@ -1,0 +1,58 @@
+@model EcommerceMVC.Models.BillingInfo
+
+<h2>Checkout</h2>
+
+<h4>Order Summary</h4>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in ViewBag.CartItems)
+    {
+        <tr>
+            <td>@item.ProductName</td>
+            <td>@item.Quantity</td>
+            <td>₹@item.Price</td>
+            <td>₹@(item.Price * item.Quantity)</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<h4 class="text-end">Grand Total: 
+    <span class="text-success">₹@ViewBag.TotalAmount</span>
+</h4>
+
+<hr />
+
+<h4>Billing Information</h4>
+<form asp-action="Checkout" method="post">
+    <div class="mb-3">
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Address</label>
+        <input asp-for="Address" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Phone</label>
+        <input asp-for="Phone" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Payment Method</label>
+        <select asp-for="PaymentMethod" class="form-control">
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>UPI</option>
+            <option>Cash on Delivery</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Place Order</button>
+</form>

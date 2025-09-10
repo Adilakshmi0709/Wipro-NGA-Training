@@ -1,0 +1,66 @@
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\appsettings.Development.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\appsettings.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.staticwebassets.runtime.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.staticwebassets.endpoints.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.exe
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.deps.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.runtimeconfig.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.dll
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.pdb
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\rpswa.dswa.cache.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.GeneratedMSBuildEditorConfig.editorconfig
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.AssemblyInfoInputs.cache
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.AssemblyInfo.cs
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.csproj.CoreCompileInputs.cache
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.MvcApplicationPartsAssemblyInfo.cache
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.RazorAssemblyInfo.cache
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.RazorAssemblyInfo.cs
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\scopedcss\bundle\RegistrationFormMVC.styles.css
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\scopedcss\projectbundle\RegistrationFormMVC.bundle.scp.css
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\staticwebassets.build.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\staticwebassets.build.json.cache
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\staticwebassets.development.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.dll
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\refint\RegistrationFormMVC.dll
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.pdb
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.genruntimeconfig.cache
+S:\Wipro\Day 26\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\ref\RegistrationFormMVC.dll
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\appsettings.Development.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\appsettings.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.staticwebassets.endpoints.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.staticwebassets.runtime.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.exe
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.deps.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.runtimeconfig.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.dll
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\bin\Debug\net8.0\RegistrationFormMVC.pdb
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\rpswa.dswa.cache.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.GeneratedMSBuildEditorConfig.editorconfig
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.AssemblyInfoInputs.cache
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.AssemblyInfo.cs
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.csproj.CoreCompileInputs.cache
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.MvcApplicationPartsAssemblyInfo.cache
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.RazorAssemblyInfo.cache
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.RazorAssemblyInfo.cs
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\scopedcss\bundle\RegistrationFormMVC.styles.css
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\scopedcss\projectbundle\RegistrationFormMVC.bundle.scp.css
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\staticwebassets.build.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\staticwebassets.build.json.cache
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\staticwebassets.development.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.dll
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\refint\RegistrationFormMVC.dll
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.pdb
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\RegistrationFormMVC.genruntimeconfig.cache
+S:\Wipro\RegistrationFormMVC\RegistrationFormMVC\obj\Debug\net8.0\ref\RegistrationFormMVC.dll

@@ -1,0 +1,40 @@
+﻿@model RegistrationFormMVC.Models.RegistrationModel
+
+<h2>Edit Candidate</h2>
+
+<form asp-action="Edit" method="post">
+    <div>
+        <label>Employee ID</label>
+        <input asp-for="EmployeeId" readonly class="form-control" />
+    </div>
+
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div>
+        <label>City</label>
+        <input asp-for="City" class="form-control" />
+    </div>
+
+    <div>
+        <label>Gender</label><br />
+        <input type="radio" asp-for="Gender" value="Male" /> Male
+        <input type="radio" asp-for="Gender" value="Female" /> Female
+    </div>
+
+    <div>
+        <label>Qualification</label><br />
+        <input type="checkbox" name="Qualification" value="BSc" /> BSc
+        <input type="checkbox" name="Qualification" value="MSc" /> MSc
+        <input type="checkbox" name="Qualification" value="BTech" /> BTech
+    </div>
+
+    <div>
+        <label>Password</label>
+        <input asp-for="Password" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">Save</button>
+</form>

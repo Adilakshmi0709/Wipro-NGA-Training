@@ -1,0 +1,25 @@
+﻿@{
+    var beforeLog = Context.Items["BeforeLog"] as string;
+    var afterLog = Context.Items["AfterLog"] as string;
+}
+
+@if (!string.IsNullOrEmpty(beforeLog))
+{
+    @Html.Raw(beforeLog)
+}
+
+@if (!string.IsNullOrEmpty(afterLog))
+{
+    @Html.Raw(afterLog)
+}
+
+<h1>Welcome to Index Page</h1>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

@@ -1,0 +1,101 @@
+﻿@* @model IEnumerable<MVC_Core_wipro.Models.Employee>
+
+@{
+    ViewData["Title"] = "Employee List";
+}
+
+<h2 class="text-center mt-4">👨‍💻 Employee Details</h2>
+
+<table class="table table-hover table-bordered shadow-lg mt-4" style="border-radius:10px; overflow:hidden;">
+    <thead class="table-dark text-center">
+        <tr>
+            <th>Employee ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr class="text-center">
+                <td>@emp.empid</td>
+                <td>@emp.firstname</td>
+                <td>@emp.lastname</td>
+                <td>@emp.city</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="text-center mt-4">
+    <button class="btn btn-primary px-4 py-2">Add Employee</button>
+    <button class="btn btn-success px-4 py-2">Export</button>
+</div>
+
+<style>
+    h2 {
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    table {
+        font-size: 1.1rem;
+    }
+
+    tbody tr:hover {
+        background-color: #f1f1f1;
+        transition: 0.3s;
+    }
+
+    button {
+        margin: 0 10px;
+        border-radius: 8px;
+    }
+</style> *@
+
+
+@model List<MVC_Core_wipro.Models.Employee>
+
+@{
+    ViewData["Title"] = "Employee List - Wipro";
+}
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-primary">Employee Records</h2>
+        <p class="text-muted">List of employees from Wipro Project</p>
+    </div>
+
+    <div class="card shadow-lg rounded-3">
+        <div class="card-body">
+            <table class="table table-hover table-bordered text-center align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var emp in Model)
+                    {
+                        <tr>
+                            <td>@emp.empid</td>
+                            <td>@emp.firstname</td>
+                            <td>@emp.lastname</td>
+                            <td>@emp.city</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<RegistrationFormMVC.Models.RegistrationModel>
+
+<h2>Registered Candidates</h2>
+
+@if (!Model.Any())
+{
+    <p>No candidates registered yet.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Gender</th>
+                <th>Qualification</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var candidate in Model)
+            {
+                <tr>
+                    <td>@candidate.EmployeeId</td>
+                    <td>@candidate.Name</td>
+                    <td>@candidate.City</td>
+                    <td>@candidate.Gender</td>
+                    <td>@string.Join(", ", candidate.Qualification)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@candidate.EmployeeId">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@candidate.EmployeeId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

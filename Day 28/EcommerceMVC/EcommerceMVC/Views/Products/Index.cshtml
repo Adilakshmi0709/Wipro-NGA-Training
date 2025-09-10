@@ -1,0 +1,36 @@
+@model List<EcommerceMVC.Models.Product>
+
+<h2>Available Products</h2>
+<div class="row">
+    @foreach (var p in Model)
+    {
+        <div class="col-md-3 card m-2 p-2">
+            <img src="@p.ImageUrl" class="card-img-top" alt="@p.Name" />
+            <div class="card-body text-center">
+                <h5>@p.Name</h5>
+                <p>₹@p.Price</p>
+
+                <form asp-controller="Cart" asp-action="Add" method="post" class="d-flex justify-content-center">
+                    <input type="hidden" name="id" value="@p.Id" />
+
+                    <!-- Quantity Selector -->
+                    <button type="button" class="btn btn-outline-secondary btn-sm me-2"
+                            onclick="var qty=document.getElementById('qty-@p.Id'); if(parseInt(qty.value)>1) qty.value--;">-</button>
+
+                    <input type="number" name="quantity" id="qty-@p.Id" value="1" min="1"
+                           class="form-control text-center" style="width:60px;" />
+
+                    <button type="button" class="btn btn-outline-secondary btn-sm ms-2"
+                            onclick="var qty=document.getElementById('qty-@p.Id'); qty.value++;">+</button>
+
+                    <button type="submit" class="btn btn-primary ms-3">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- Show Cart Button -->
+<div class="text-center mt-4">
+    <a asp-controller="Cart" asp-action="Index" class="btn btn-success">Show Cart</a>
+</div>

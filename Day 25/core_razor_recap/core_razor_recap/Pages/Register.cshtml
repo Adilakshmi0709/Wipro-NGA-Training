@@ -1,0 +1,19 @@
+﻿@page
+@model core_razor_recap.Pages.RegisterModel
+@{
+}
+
+<form method="post">
+    <label>Name:</label>
+    <input type="text" name="Name" />
+
+    <label>Email:</label>
+    <input type="email" name="Email" />
+
+    <button type="submit">Submit</button>
+</form>
+
+@if (Model.Message != null)
+{
+    <p>@Model.Message</p>
+}

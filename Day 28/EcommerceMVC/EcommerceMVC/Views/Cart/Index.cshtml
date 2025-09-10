@@ -1,0 +1,56 @@
+@model List<EcommerceMVC.Models.CartItem>
+
+<h2>Your Shopping Cart</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <p>Your cart is empty.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.Quantity</td>
+                <td>₹@item.Price</td>
+                <td>₹@(item.Price * item.Quantity)</td>
+                <td>
+                    <form asp-controller="Cart" asp-action="Remove" method="post">
+                        <input type="hidden" name="id" value="@item.ProductId" />
+                        <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                    </form>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    <!-- ✅ Grand Total -->
+    <h4 class="text-end">
+        Grand Total: 
+        <span class="text-success fw-bold">
+            ₹@Model.Sum(x => x.Price * x.Quantity)
+        </span>
+    </h4>
+
+    <!-- ✅ Checkout + Clear buttons -->
+    <div class="text-end mt-3">
+        <form asp-controller="Cart" asp-action="Clear" method="post" class="d-inline">
+            <button type="submit" class="btn btn-outline-danger">Clear Cart</button>
+        </form>
+
+        <a asp-controller="Billing" asp-action="Checkout" class="btn btn-warning ms-2">Proceed to Checkout</a>
+    </div>
+}

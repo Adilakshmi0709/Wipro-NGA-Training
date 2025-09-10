@@ -1,0 +1,18 @@
+﻿@model MVC_CORE_WIPRP.Models.Employee
+
+@{
+    ViewData["Title"] = "viewdemo";
+    Layout = "~/Views/Shared/_Layout.cshtml";  // Or ibmview.cshtml if you made it a layout
+}
+
+<h1>Employee Details (viewdemo)</h1>
+
+<p><strong>Employee ID:</strong> @Model.empid</p>
+<p><strong>First Name:</strong> @Model.firstname</p>
+<p><strong>Last Name:</strong> @Model.lastname</p>
+<p><strong>City:</strong> @Model.city</p>
+
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.empid }) |
+    <a asp-action="Index">Back to List</a>
+</div>

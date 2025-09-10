@@ -1,0 +1,8 @@
+<h2>Parent Component</h2>
+<p>Message from Child: {{ messageFromChild }}</p>
+
+<!-- Passing data to child -->
+<app-childcomponent
+  [childMessage]="parentMessage"
+  (messageEvent)="receiveMessage($event)">
+</app-childcomponent>

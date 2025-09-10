@@ -1,0 +1,62 @@
+﻿@model RegistrationFormMVC.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "Registration Form";
+}
+
+<h2>Registration Form</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Employee ID</label>
+        <input asp-for="EmployeeId" class="form-control" />
+        <span asp-validation-for="EmployeeId" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>City</label>
+        <select asp-for="City" class="form-control">
+            <option value="">--Select City--</option>
+            <option>Pune</option>
+            <option>Mumbai</option>
+            <option>Delhi</option>
+            <option>Bangalore</option>
+        </select>
+        <span asp-validation-for="City" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Gender</label><br />
+        <input type="radio" asp-for="Gender" value="Male" /> Male
+        <input type="radio" asp-for="Gender" value="Female" /> Female
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Qualification</label><br />
+        <input type="checkbox" name="Qualification" value="BSc" /> BSc
+        <input type="checkbox" name="Qualification" value="MSc" /> MSc
+        <input type="checkbox" name="Qualification" value="BTech" /> BTech
+        <span asp-validation-for="Qualification" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Password</label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

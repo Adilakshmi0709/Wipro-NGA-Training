@@ -1,0 +1,27 @@
+﻿@model MVC_CORE_WIPRP.Models.Employee
+
+@{
+    ViewData["Title"] = "ibmview";
+    Layout = "~/Views/Shared/_Layout.cshtml";  // Or keep custom
+}
+
+<h1>Employee Details (ibmview)</h1>
+
+<dl class="row">
+    <dt class="col-sm-2">Employee ID</dt>
+    <dd class="col-sm-10">@Model.empid</dd>
+
+    <dt class="col-sm-2">First Name</dt>
+    <dd class="col-sm-10">@Model.firstname</dd>
+
+    <dt class="col-sm-2">Last Name</dt>
+    <dd class="col-sm-10">@Model.lastname</dd>
+
+    <dt class="col-sm-2">City</dt>
+    <dd class="col-sm-10">@Model.city</dd>
+</dl>
+
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.empid }) |
+    <a asp-action="Index">Back to List</a>
+</div>

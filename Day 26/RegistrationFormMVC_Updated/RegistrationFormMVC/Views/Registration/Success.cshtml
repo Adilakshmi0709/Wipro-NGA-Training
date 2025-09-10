@@ -1,0 +1,8 @@
+﻿@model RegistrationFormMVC.Models.RegistrationModel
+
+<h2>Registration Successful!</h2>
+<p><strong>Employee ID:</strong> @Model.EmployeeId</p>
+<p><strong>Name:</strong> @Model.Name</p>
+<p><strong>City:</strong> @Model.City</p>
+<p><strong>Gender:</strong> @Model.Gender</p>
+<p><strong>Qualification:</strong> @string.Join(", ", Model.Qualification)</p>

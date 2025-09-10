@@ -1,0 +1,25 @@
+﻿@model RegistrationFormMVC.Models.Subscriber
+
+<h2>Edit Subscriber</h2>
+
+@using (Html.BeginForm("Edit", "Subscriber", FormMethod.Post))
+{
+    @Html.HiddenFor(m => m.Id)
+
+    <div>
+        @Html.LabelFor(m => m.Username)
+        @Html.TextBoxFor(m => m.Username)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password)
+    </div>
+
+    <button type="submit">Update</button>
+}

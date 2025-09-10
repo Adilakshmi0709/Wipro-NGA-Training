@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFFrameworkDemo", "EFFrameworkDemo\EFFrameworkDemo.csproj", "{BF33FD2D-D971-D880-5163-532E3DD4556E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAdoApp", "MyAdoApp\MyAdoApp.csproj", "{D93A5C50-B606-2FB0-A6FC-ABAC9EB49C96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF33FD2D-D971-D880-5163-532E3DD4556E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF33FD2D-D971-D880-5163-532E3DD4556E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF33FD2D-D971-D880-5163-532E3DD4556E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF33FD2D-D971-D880-5163-532E3DD4556E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D93A5C50-B606-2FB0-A6FC-ABAC9EB49C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93A5C50-B606-2FB0-A6FC-ABAC9EB49C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93A5C50-B606-2FB0-A6FC-ABAC9EB49C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93A5C50-B606-2FB0-A6FC-ABAC9EB49C96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B24BE26-5C2F-4AEA-B514-1D2A67A5F968}
+	EndGlobalSection
+EndGlobal

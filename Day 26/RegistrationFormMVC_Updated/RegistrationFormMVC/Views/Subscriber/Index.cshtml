@@ -1,0 +1,24 @@
+﻿@model IEnumerable<RegistrationFormMVC.Models.Subscriber>
+
+<h2>All Subscribers</h2>
+<a asp-action="Create">Add New Subscriber</a>
+<table border="1">
+    <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Username</td>
+            <td>@item.Email</td>
+            <td>@item.Password</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
