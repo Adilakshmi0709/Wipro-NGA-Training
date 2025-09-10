@@ -1,0 +1,45 @@
+<div class="container mt-4">
+  <h3 class="mb-4">My Answers</h3>
+
+  <!-- Loader -->
+  <div *ngIf="loading" class="text-center">
+    <div class="spinner-border text-primary"></div>
+  </div>
+
+  <!-- No answers -->
+  <div *ngIf="!loading && answers.length === 0" class="alert alert-info">
+    You haven't answered any questions yet.
+  </div>
+
+  <!-- List answers -->
+  <div class="row" *ngIf="!loading && answers.length > 0">
+    <div class="col-md-6 mb-3" *ngFor="let a of answers">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <!-- ✅ Show related question -->
+          <h5 class="card-title">Q: {{ a.questionTitle }}</h5>
+          <p class="card-text text-muted">{{ a.question?.description }}</p>
+          <hr>
+          <p class="card-text"><strong>Your Answer:</strong> {{ a.text }}</p>
+
+          <!-- Answer images -->
+          <div *ngIf="a.images && a.images.length > 0" class="mt-2">
+            <div *ngFor="let img of a.images">
+              <img [src]="apiBaseUrl + img"
+                   class="img-fluid rounded mb-2"
+                   alt="Answer image"
+                   style="max-width: 200px; cursor: pointer;"
+                   (click)="openPreview(apiBaseUrl + img)">
+            </div>
+          </div>
+          <small class="text-muted">Status: {{ a.status }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fullscreen Image Preview -->
+<div *ngIf="previewImage" class="image-preview-overlay" (click)="closePreview()">
+  <img [src]="previewImage" class="image-preview" />
+</div>

@@ -1,0 +1,110 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Mobile top bar -->
+    <div class="col-12 bg-light p-2 d-md-none d-flex justify-content-between align-items-center">
+      <button class="btn btn-outline-primary" (click)="toggleSidebar()">☰ Menu</button>
+      <h5 class="mb-0">Admin</h5>
+    </div>
+
+    <!-- Sidebar -->
+    <div [ngClass]="sidebarOpen ? 'col-12 col-md-3 col-lg-2 p-0 sidebar-wrapper' : 'd-none d-md-block col-md-3 col-lg-2 p-0 sidebar-wrapper'">
+      <app-admin-sidebar></app-admin-sidebar>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-12 col-md-9 col-lg-10 p-4">
+      <div class="card shadow-sm p-4">
+        <h2>Manage Users</h2>
+
+        <div class="table-responsive d-none d-md-block">
+          <table class="table table-hover align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th class="text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let u of users">
+                <td>{{ u.username }}</td>
+                <td>{{ u.email }}</td>
+                <td>{{ u.role }}</td>
+                <td class="text-center">
+                  <!-- Button 1: Details -->
+                  <button class="btn btn-info btn-sm me-2" (click)="showDetails(u)">
+                    Details
+                  </button>
+
+                  <!-- Button 2: Change Role -->
+                  <div class="btn-group me-2">
+                    <button class="btn btn-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown">
+                      Change Role
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" (click)="changeRole(u.userId, 'User')">Set User</a></li>
+                      <li><a class="dropdown-item" (click)="changeRole(u.userId, 'Admin')">Set Admin</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Button 3: Delete -->
+                  <button class="btn btn-danger btn-sm" (click)="delete(u.userId)">
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- User Details Modal -->
+      <div class="modal fade show" tabindex="-1" style="display: block;" *ngIf="selectedUser">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">User Details</h5>
+              <button type="button" class="btn-close" (click)="closeModal()"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Username:</strong> {{ selectedUser.username }}</p>
+              <p><strong>Email:</strong> {{ selectedUser.email }}</p>
+              <p><strong>Role:</strong> {{ selectedUser.role }}</p>
+              <p><strong>First Name:</strong> {{ selectedUser.firstName }}</p>
+              <p><strong>Last Name:</strong> {{ selectedUser.lastName }}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Mobile View -->
+  <div class="d-block d-md-none">
+    <div *ngFor="let u of users" class="card mb-2 shadow-sm">
+      <div class="card-body">
+        <h6 class="card-title"><strong>Username:</strong> {{ u.username }}</h6>
+        <p class="card-text mb-1"><strong>Email:</strong> {{ u.email }}</p>
+        <p class="card-text mb-2"><strong>Role:</strong> {{ u.role }}</p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-info btn-sm" (click)="showDetails(u)">Details</button>
+          <div class="btn-group">
+            <button class="btn btn-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown">
+              Change Role
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)="changeRole(u.userId, 'User')">Set User</a></li>
+              <li><a class="dropdown-item" (click)="changeRole(u.userId, 'Admin')">Set Admin</a></li>
+            </ul>
+          </div>
+          <button class="btn btn-danger btn-sm" (click)="delete(u.userId)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

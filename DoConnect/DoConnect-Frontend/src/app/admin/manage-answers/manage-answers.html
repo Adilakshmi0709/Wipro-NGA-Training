@@ -1,0 +1,83 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Mobile top bar -->
+    <div class="col-12 bg-light p-2 d-md-none d-flex justify-content-between align-items-center">
+      <button class="btn btn-outline-primary" (click)="toggleSidebar()">☰ Menu</button>
+      <h5 class="mb-0">Admin</h5>
+    </div>
+
+    <!-- Sidebar -->
+    <div [ngClass]="sidebarOpen ? 'col-12 col-md-3 col-lg-2 p-0 sidebar-wrapper' : 'd-none d-md-block col-md-3 col-lg-2 p-0 sidebar-wrapper'">
+      <app-admin-sidebar></app-admin-sidebar>
+    </div>
+
+    <div class="col-12 col-md-9 col-lg-10 p-4">
+      <div class="card shadow-sm p-4">
+        <h2>Manage Answers</h2>
+        <div class="table-responsive d-none d-md-block">
+          <table class="table table-hover align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th>Answer</th>
+                <th>Question</th>
+                <th>Status</th>
+                <th>User</th>
+                <th class="text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let a of answers">
+                <td class="answer-column">
+                  <div class="answer-scroll">
+                  <div class="answer-content">
+                    {{ a.text }}
+                    <div *ngIf="a.images && a.images.length > 0" class="mt-2">
+                      <div *ngFor="let img of a.images">
+                        <img [src]="apiBaseUrl + img"
+                           class="img-fluid rounded mb-2"
+                           alt="Answer image"
+                           style="max-width: 200px; cursor: pointer;"
+                           (click)="openPreview(apiBaseUrl + img)">
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </td>
+                <td>{{ a.question?.questionTitle }}</td>
+                <td>{{ a.status }}</td>
+                <td>{{ a.user?.username }}</td>
+                <td class="text-center actions-button">
+                  <button class="btn btn-success btn-sm me-2" (click)="approve(a.answerId)">Approve</button>
+                  <button class="btn btn-warning btn-sm me-2" (click)="reject(a.answerId)">Reject</button>
+                  <button class="btn btn-danger btn-sm" (click)="delete(a.answerId)">Delete</button>
+                </td>
+              </tr>
+              <br><br>
+            </tbody>
+          </table>
+<!-- 🔹 Preview Modal -->
+<div class="preview-overlay" *ngIf="previewImage" (click)="closePreview()">
+  <img [src]="previewImage" class="preview-image" />
+</div>        
+</div>
+        
+        <!-- Mobile card layout -->
+        <div class="d-block d-md-none">
+          <div class="card mb-3" *ngFor="let a of answers">
+            <div class="card-body">
+              <h6 class="card-title">{{ a.text }}</h6>
+              <p class="mb-1"><strong>Status:</strong> {{ a.status }}</p>
+              <p class="mb-1"><strong>User:</strong> {{ a.user?.username }}</p>
+              <p class="mb-1"><strong>Question:</strong> {{ a.question?.title }}</p>
+              <div class="mt-2">
+                <button class="btn btn-success btn-sm me-2" (click)="approve(a.answerId)">Approve</button>
+                <button class="btn btn-warning btn-sm me-2" (click)="reject(a.answerId)">Reject</button>
+                <button class="btn btn-danger btn-sm" (click)="delete(a.answerId)">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

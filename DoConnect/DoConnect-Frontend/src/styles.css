@@ -1,0 +1,109 @@
+/* Bootstrap core styles */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Bootstrap icons */
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+/* ===== Base Layout ===== */
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+router-outlet {
+  flex: 1;
+}
+
+/* ===== Navbar ===== */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fff !important;
+}
+
+.navbar-dark .nav-link {
+  color: #dcdcdc !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #fff !important;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #212529;
+  color: #dcdcdc;
+  text-align: center;
+}
+
+.footer a {
+  color: #dcdcdc;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* ===== Cards ===== */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+/* ===== Forms ===== */
+.form-control {
+  border-radius: 6px;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+}
+
+/* ===== Tables ===== */
+.table {
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #343a40;
+  color: #fff;
+  font-weight: 500;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* ===== Utility ===== */
+.container {
+  max-width: 960px;
+}

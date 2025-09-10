@@ -1,0 +1,4 @@
+.sidebar-wrapper {
+  transition: all 0.3s ease;
+  z-index: 1050; /* keep sidebar above content on mobile */
+}

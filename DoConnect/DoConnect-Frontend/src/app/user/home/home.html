@@ -1,0 +1,94 @@
+<div class="container mt-4">
+
+  <!-- Search bar with buttons -->
+  <div class="input-group mb-3">
+    <input type="text"
+           class="form-control"
+           placeholder="Search questions..."
+           [(ngModel)]="searchQuery">
+
+    <button class="btn btn-primary" (click)="searchQuestions()">
+      Search
+    </button>
+
+    <button class="btn btn-outline-secondary" (click)="clearSearch()">
+      Clear
+    </button>
+  </div>
+
+  <!-- Question list -->
+  <div *ngIf="!selectedQuestion">
+    <h3>All Questions</h3>
+
+    <!-- Loading spinner -->
+    <div *ngIf="loading" class="text-center my-3">
+      <div class="spinner-border text-primary"></div>
+    </div>
+
+    <!-- No results found -->
+    <div *ngIf="!loading && noResults" class="alert alert-warning">
+      No questions found for "{{ searchQuery }}"
+    </div>
+
+    <!-- Questions list -->
+    <div *ngIf="!loading && !noResults">
+      <div *ngFor="let q of questions" class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>{{ q.title }}</h5>
+          <p>{{ q.text }}</p>
+          <button class="btn btn-primary" (click)="viewQuestion(q.questionId)">
+            View
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question detail -->
+  <div *ngIf="selectedQuestion">
+    <button class="btn btn-link mb-3" (click)="backToList()">
+      ← Back to Questions
+    </button>
+
+    <h3>{{ selectedQuestion.title }}</h3>
+    <p>{{ selectedQuestion.text }}</p>
+
+    <!-- Question images -->
+    <div *ngIf="selectedQuestion.images?.length > 0" class="mt-3">
+      <h6>Images:</h6>
+      <div class="d-flex flex-wrap gap-2">
+        <img *ngFor="let img of selectedQuestion.images"
+             [src]="apiBaseUrl + img"
+             class="img-thumbnail"
+             style="max-width: 200px; cursor: pointer;"
+             (click)="openPreview(apiBaseUrl + img)">
+      </div>
+    </div>
+
+    <!-- Answers -->
+    <div class="mt-4">
+      <h5>Answers</h5>
+      <div *ngIf="!selectedQuestion.answers || selectedQuestion.answers.length === 0" class="text-muted">
+        No answers yet.
+      </div>
+
+      <ul class="list-group" *ngIf="selectedQuestion.answers && selectedQuestion.answers.length > 0">
+        <li class="list-group-item" *ngFor="let a of selectedQuestion.answers">
+          <p>{{ a.text }}</p>
+          <div *ngIf="a.images?.length > 0" class="mt-2">
+            <img *ngFor="let img of a.images"
+                 [src]="apiBaseUrl + img"
+                 class="img-thumbnail me-2"
+                 style="max-width: 200px; cursor: pointer;"
+                 (click)="openPreview(apiBaseUrl + img)">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Fullscreen Image Preview -->
+<div *ngIf="previewImage" class="image-preview-overlay" (click)="closePreview()">
+  <img [src]="previewImage" class="image-preview" />
+</div>

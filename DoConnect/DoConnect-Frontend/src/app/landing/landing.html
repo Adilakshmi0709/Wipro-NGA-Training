@@ -1,0 +1,18 @@
+<div class="landing d-flex flex-column justify-content-center align-items-center text-center">
+  <h1 class="display-4 fw-bold mb-3">Welcome to DoConnect</h1>
+  <p class="lead mb-4">
+    A Collaborative Question & Answer Platform
+  </p>
+
+  <!-- If not logged in -->
+  <div *ngIf="!isLoggedIn; else loggedInBlock">
+    <a routerLink="/login" class="btn btn-primary btn-lg me-3">Login</a>
+    <a routerLink="/register" class="btn btn-outline-light btn-lg">Register</a>
+  </div>
+
+  <!-- If logged in -->
+  <ng-template #loggedInBlock>
+    <p class="mb-3">Welcome back, {{ username || 'User' }}!</p>
+    <button class="btn btn-success btn-lg" (click)="goToApp()">Go to App</button>
+  </ng-template>
+</div>

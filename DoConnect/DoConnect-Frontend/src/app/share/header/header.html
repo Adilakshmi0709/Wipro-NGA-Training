@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm ">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">DoConnect</a>
+    
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleNavbar()"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    <div class="collapse navbar-collapse" [class.show]="!navbarCollapsed"  id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" *ngIf="isLoggedIn() && getRole() === 'User'">
+          <a class="nav-link" routerLink="/home" (click)="closeNavbar()">Home</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn() && getRole() === 'User'">
+          <a class="nav-link" routerLink="/ask-question" (click)="closeNavbar()">Ask Question</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn() && getRole() === 'User'">
+          <a class="nav-link" routerLink="/give-answer" (click)="closeNavbar()">Give Answer</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn() && getRole() === 'User'">
+          <a class="nav-link" routerLink="/my-questions" (click)="closeNavbar()">My Questions</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn() && getRole() === 'User'">
+          <a class="nav-link" routerLink="/my-answers" (click)="closeNavbar()">My Answers</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn() && getRole() === 'User'">
+          <a class="nav-link" routerLink="/profile" (click)="closeNavbar()">Profile</a>
+        </li>
+
+        <!-- Admin -->
+        <li class="nav-item" *ngIf="isLoggedIn() && getRole() === 'Admin'">
+          <a class="nav-link" routerLink="/admin/dashboard"  (click)="closeNavbar()">Dashboard</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn() && getRole() === 'Admin'">
+          <a class="nav-link" routerLink="/admin/manage-questions" (click)="closeNavbar()">Manage Questions</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn() && getRole() === 'Admin'">
+          <a class="nav-link" routerLink="/admin/manage-answers"  (click)="closeNavbar()">Manage Answers</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn() && getRole() === 'Admin'">
+          <a class="nav-link" routerLink="/admin/manage-users"  (click)="closeNavbar()">Manage Users</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" *ngIf="!isLoggedIn()">
+          <a class="btn btn-outline-light me-2" routerLink="/login" (click)="closeNavbar()">Login</a>
+          <a class="btn btn-primary" routerLink="/register" (click)="closeNavbar()">Register</a>
+        </li>
+        <li class="nav-item d-flex align-items-center" *ngIf="isLoggedIn()">
+          <span class="text-light me-3">
+            WELCOME &nbsp;&nbsp;{{ getUsername() || 'User' }}
+          </span>
+          <button class="btn btn-danger btn-sm" (click)="logout()">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

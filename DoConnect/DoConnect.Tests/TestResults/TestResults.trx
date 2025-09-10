@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="8febeb99-9995-462a-a02b-5cfff287511c" name="Ammu@ADILAKSHMI-RAJU 2025-09-07 18:30:09" runUser="ADILAKSHMI-RAJU\Ammu" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-09-07T18:30:09.6017135+05:30" queuing="2025-09-07T18:30:09.6017139+05:30" start="2025-09-07T18:30:07.4993665+05:30" finish="2025-09-07T18:30:09.6932725+05:30" />
+  <TestSettings name="default" id="6e28c6df-1458-4f6a-8f05-9a0486826c96">
+    <Deployment runDeploymentRoot="Ammu_ADILAKSHMI-RAJU_2025-09-07_18_30_09" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="81573d35-0c14-44ea-aa92-f2462f6a30c9" testId="dd80fd23-98b6-c4d6-5663-d5649fc7d064" testName="DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchUserRole_Unauthorized_By_Default" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0059612" startTime="2025-09-07T18:30:09.5756655+05:30" endTime="2025-09-07T18:30:09.5756657+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81573d35-0c14-44ea-aa92-f2462f6a30c9">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchUserRole_Unauthorized_By_Default() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs:line 71&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5ac99910-fa50-4b56-9b7f-cd30f069acce" testId="7c8a222b-4ec3-2493-0fb0-25058efb1be8" testName="DoConnect.Tests.Controllers.QuestionsControllerTests.GetQuestionById_NotFound_For_Missing" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0008919" startTime="2025-09-07T18:30:09.4925186+05:30" endTime="2025-09-07T18:30:09.4925188+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ac99910-fa50-4b56-9b7f-cd30f069acce">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.QuestionsControllerTests.GetQuestionById_NotFound_For_Missing() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\QuestionsControllerTests.cs:line 31&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cb03ce35-a884-4b84-8147-8e4117b11372" testId="b5acb4f6-f289-dd47-efbf-bf3701e548a2" testName="DoConnect.Tests.Controllers.AnswersControllerTests.GetMyAnswers_RequiresAuth" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0338583" startTime="2025-09-07T18:30:09.4847149+05:30" endTime="2025-09-07T18:30:09.4847151+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb03ce35-a884-4b84-8147-8e4117b11372">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AnswersControllerTests.GetMyAnswers_RequiresAuth() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AnswersControllerTests.cs:line 23&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c9bbce3c-44c0-406e-9a5d-46ad488d1271" testId="ddbcbd94-9d65-d57d-a04c-81d3c138d52a" testName="DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteUser_Unauthorized_By_Default" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0006271" startTime="2025-09-07T18:30:09.4938918+05:30" endTime="2025-09-07T18:30:09.4938921+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9bbce3c-44c0-406e-9a5d-46ad488d1271">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteUser_Unauthorized_By_Default() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs:line 79&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1cf61ac4-29d5-427e-8644-cbbd1d344a84" testId="a4dd27fc-0a34-113a-32b1-364a7bea8e67" testName="DoConnect.Tests.Controllers.AuthControllerTests.Login_Returns_401_Or_BadRequest_For_Invalid" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0007584" startTime="2025-09-07T18:30:09.5604778+05:30" endTime="2025-09-07T18:30:09.5604780+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1cf61ac4-29d5-427e-8644-cbbd1d344a84">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AuthControllerTests.Login_Returns_401_Or_BadRequest_For_Invalid() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AuthControllerTests.cs:line 24&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c19150ca-9332-4bdc-a29d-dd7abe74fb4b" testId="de8fddaf-48ab-19fd-eef1-fb515af5da96" testName="DoConnect.Tests.Controllers.AnswersControllerTests.PostAnswer_RequiresAuth_Or_BadRequest" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0020948" startTime="2025-09-07T18:30:09.4893229+05:30" endTime="2025-09-07T18:30:09.4893231+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c19150ca-9332-4bdc-a29d-dd7abe74fb4b">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AnswersControllerTests.PostAnswer_RequiresAuth_Or_BadRequest() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AnswersControllerTests.cs:line 15&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="448c9cfd-e974-422e-8fc8-a483bcc4f350" testId="0f62700c-9cba-cef3-a873-6177b14e5070" testName="DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetQuestions_RequiresAuth" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0023354" startTime="2025-09-07T18:30:09.5706745+05:30" endTime="2025-09-07T18:30:09.5706749+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="448c9cfd-e974-422e-8fc8-a483bcc4f350">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetQuestions_RequiresAuth() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs:line 15&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e07c4691-fa3b-4480-bef4-af3eed8279fd" testId="6078e5ec-bd9c-270f-4c38-9f310e2ef87c" testName="DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetUsers_RequiresAuth" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0006528" startTime="2025-09-07T18:30:09.5531393+05:30" endTime="2025-09-07T18:30:09.5531398+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e07c4691-fa3b-4480-bef4-af3eed8279fd">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetUsers_RequiresAuth() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs:line 31&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="897ae536-d585-495e-b14e-43230c0df927" testId="027bbac3-c1c8-8cb0-1437-ad667d639c3f" testName="DoConnect.Tests.Controllers.QuestionsControllerTests.GetQuestions_Returns_OK" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0006048" startTime="2025-09-07T18:30:09.4873930+05:30" endTime="2025-09-07T18:30:09.4873932+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="897ae536-d585-495e-b14e-43230c0df927">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.QuestionsControllerTests.GetQuestions_Returns_OK() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\QuestionsControllerTests.cs:line 23&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f720b891-a51a-409d-b2b6-8c76749c6f05" testId="8f98e540-bd71-175a-3bf5-2c3fb3204456" testName="DoConnect.Tests.Controllers.UsersControllerTests.Me_RequiresAuth" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0338355" startTime="2025-09-07T18:30:09.4828233+05:30" endTime="2025-09-07T18:30:09.4828234+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f720b891-a51a-409d-b2b6-8c76749c6f05">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.UsersControllerTests.Me_RequiresAuth() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\UsersControllerTests.cs:line 14&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d2d86845-2a92-4309-ad97-bb5e0c0ec56a" testId="90ddd418-db44-d45d-74a3-4195221fd986" testName="DoConnect.Tests.Controllers.AuthControllerTests.ForgotPassword_Returns_404_Or_BadRequest" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0009853" startTime="2025-09-07T18:30:09.5591080+05:30" endTime="2025-09-07T18:30:09.5591083+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2d86845-2a92-4309-ad97-bb5e0c0ec56a">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AuthControllerTests.ForgotPassword_Returns_404_Or_BadRequest() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AuthControllerTests.cs:line 32&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c774e44d-949a-4cef-9b5e-addb774cb424" testId="28a79241-283a-72e7-f61d-ef42b324c316" testName="DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchQuestionStatus_Unauthorized_By_Default" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0022204" startTime="2025-09-07T18:30:09.5718709+05:30" endTime="2025-09-07T18:30:09.5718711+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c774e44d-949a-4cef-9b5e-addb774cb424">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchQuestionStatus_Unauthorized_By_Default() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs:line 39&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0fd66138-43b7-474b-b6a9-2b069d684abc" testId="a7aa4532-d7b3-d8d5-09af-02735ea41855" testName="DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteAnswer_Unauthorized_By_Default" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0006222" startTime="2025-09-07T18:30:09.5675940+05:30" endTime="2025-09-07T18:30:09.5675943+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0fd66138-43b7-474b-b6a9-2b069d684abc">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteAnswer_Unauthorized_By_Default() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs:line 63&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5a6c8c45-f298-45b8-a823-075afabd0ca4" testId="7bd3d9bb-d79e-c9c9-572e-a4f2018935c1" testName="DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchAnswerStatus_Unauthorized_By_Default" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0026101" startTime="2025-09-07T18:30:09.5771719+05:30" endTime="2025-09-07T18:30:09.5771726+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a6c8c45-f298-45b8-a823-075afabd0ca4">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchAnswerStatus_Unauthorized_By_Default() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs:line 47&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="67f15e36-a528-427d-b0fe-16f419c9836b" testId="5f1bed58-8e17-8e97-ec7f-38a02a77e504" testName="DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteQuestion_Unauthorized_By_Default" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0026798" startTime="2025-09-07T18:30:09.5660428+05:30" endTime="2025-09-07T18:30:09.5660432+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67f15e36-a528-427d-b0fe-16f419c9836b">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteQuestion_Unauthorized_By_Default() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs:line 55&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f2ada6b5-a324-4344-bde8-38ee09404d1d" testId="ff83a0fa-bec4-611e-dcbf-95f4a3a592d9" testName="DoConnect.Tests.Controllers.QuestionsControllerTests.PostQuestion_RequiresAuth_Or_BadRequest" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0007136" startTime="2025-09-07T18:30:09.4910237+05:30" endTime="2025-09-07T18:30:09.4910238+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2ada6b5-a324-4344-bde8-38ee09404d1d">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.QuestionsControllerTests.PostQuestion_RequiresAuth_Or_BadRequest() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\QuestionsControllerTests.cs:line 15&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1aa0ca06-95b2-465f-8ebd-b777a35e4152" testId="0622f5ee-afa6-6e5c-3701-7d0cbb42e776" testName="DoConnect.Tests.Controllers.AuthControllerTests.ResetPassword_Returns_BadRequest_For_Invalid" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0007114" startTime="2025-09-07T18:30:09.5503696+05:30" endTime="2025-09-07T18:30:09.5503704+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1aa0ca06-95b2-465f-8ebd-b777a35e4152">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AuthControllerTests.ResetPassword_Returns_BadRequest_For_Invalid() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AuthControllerTests.cs:line 40&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1bc96d8f-64d4-4eb3-9e8e-df8cd0afc528" testId="d2ccf8fe-45ed-1b9a-7f55-20bb538599a7" testName="DoConnect.Tests.Controllers.QuestionsControllerTests.GetMyQuestions_RequiresAuth" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0338323" startTime="2025-09-07T18:30:09.4756558+05:30" endTime="2025-09-07T18:30:09.4756920+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1bc96d8f-64d4-4eb3-9e8e-df8cd0afc528">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.QuestionsControllerTests.GetMyQuestions_RequiresAuth() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\QuestionsControllerTests.cs:line 39&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a1df3886-86f3-4dac-9cfd-07588d6e6867" testId="f6d7bed9-4cda-1e3d-6f39-e2616ee0ca7f" testName="DoConnect.Tests.Controllers.AuthControllerTests.Register_Returns_BadRequest_For_Empty_Payload" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0006606" startTime="2025-09-07T18:30:09.5577130+05:30" endTime="2025-09-07T18:30:09.5577132+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1df3886-86f3-4dac-9cfd-07588d6e6867">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AuthControllerTests.Register_Returns_BadRequest_For_Empty_Payload() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AuthControllerTests.cs:line 15&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d2dd076b-914a-43a3-9d02-f54ac09b741c" testId="2f1d413a-b5f9-d7d5-9e00-d83a9d477e48" testName="DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetAnswers_RequiresAuth" computerName="ADILAKSHMI-RAJU" duration="00:00:00.0016557" startTime="2025-09-07T18:30:09.5804577+05:30" endTime="2025-09-07T18:30:09.5804580+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2dd076b-914a-43a3-9d02-f54ac09b741c">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.</Message>
+          <StackTrace>   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+   at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+   at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs:line 96&#xD;
+   at DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetAnswers_RequiresAuth() in C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs:line 23&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteAnswer_Unauthorized_By_Default" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="a7aa4532-d7b3-d8d5-09af-02735ea41855">
+      <Execution id="0fd66138-43b7-474b-b6a9-2b069d684abc" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AdminControllerTests" name="Admin_DeleteAnswer_Unauthorized_By_Default" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.UsersControllerTests.Me_RequiresAuth" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="8f98e540-bd71-175a-3bf5-2c3fb3204456">
+      <Execution id="f720b891-a51a-409d-b2b6-8c76749c6f05" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.UsersControllerTests" name="Me_RequiresAuth" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchAnswerStatus_Unauthorized_By_Default" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="7bd3d9bb-d79e-c9c9-572e-a4f2018935c1">
+      <Execution id="5a6c8c45-f298-45b8-a823-075afabd0ca4" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AdminControllerTests" name="Admin_PatchAnswerStatus_Unauthorized_By_Default" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.QuestionsControllerTests.GetQuestionById_NotFound_For_Missing" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="7c8a222b-4ec3-2493-0fb0-25058efb1be8">
+      <Execution id="5ac99910-fa50-4b56-9b7f-cd30f069acce" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.QuestionsControllerTests" name="GetQuestionById_NotFound_For_Missing" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchQuestionStatus_Unauthorized_By_Default" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="28a79241-283a-72e7-f61d-ef42b324c316">
+      <Execution id="c774e44d-949a-4cef-9b5e-addb774cb424" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AdminControllerTests" name="Admin_PatchQuestionStatus_Unauthorized_By_Default" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AuthControllerTests.Login_Returns_401_Or_BadRequest_For_Invalid" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="a4dd27fc-0a34-113a-32b1-364a7bea8e67">
+      <Execution id="1cf61ac4-29d5-427e-8644-cbbd1d344a84" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AuthControllerTests" name="Login_Returns_401_Or_BadRequest_For_Invalid" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AuthControllerTests.ForgotPassword_Returns_404_Or_BadRequest" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="90ddd418-db44-d45d-74a3-4195221fd986">
+      <Execution id="d2d86845-2a92-4309-ad97-bb5e0c0ec56a" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AuthControllerTests" name="ForgotPassword_Returns_404_Or_BadRequest" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AnswersControllerTests.PostAnswer_RequiresAuth_Or_BadRequest" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="de8fddaf-48ab-19fd-eef1-fb515af5da96">
+      <Execution id="c19150ca-9332-4bdc-a29d-dd7abe74fb4b" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AnswersControllerTests" name="PostAnswer_RequiresAuth_Or_BadRequest" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetQuestions_RequiresAuth" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="0f62700c-9cba-cef3-a873-6177b14e5070">
+      <Execution id="448c9cfd-e974-422e-8fc8-a483bcc4f350" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AdminControllerTests" name="Admin_GetQuestions_RequiresAuth" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AuthControllerTests.Register_Returns_BadRequest_For_Empty_Payload" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="f6d7bed9-4cda-1e3d-6f39-e2616ee0ca7f">
+      <Execution id="a1df3886-86f3-4dac-9cfd-07588d6e6867" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AuthControllerTests" name="Register_Returns_BadRequest_For_Empty_Payload" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.QuestionsControllerTests.PostQuestion_RequiresAuth_Or_BadRequest" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="ff83a0fa-bec4-611e-dcbf-95f4a3a592d9">
+      <Execution id="f2ada6b5-a324-4344-bde8-38ee09404d1d" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.QuestionsControllerTests" name="PostQuestion_RequiresAuth_Or_BadRequest" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteQuestion_Unauthorized_By_Default" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="5f1bed58-8e17-8e97-ec7f-38a02a77e504">
+      <Execution id="67f15e36-a528-427d-b0fe-16f419c9836b" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AdminControllerTests" name="Admin_DeleteQuestion_Unauthorized_By_Default" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteUser_Unauthorized_By_Default" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="ddbcbd94-9d65-d57d-a04c-81d3c138d52a">
+      <Execution id="c9bbce3c-44c0-406e-9a5d-46ad488d1271" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AdminControllerTests" name="Admin_DeleteUser_Unauthorized_By_Default" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.QuestionsControllerTests.GetMyQuestions_RequiresAuth" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="d2ccf8fe-45ed-1b9a-7f55-20bb538599a7">
+      <Execution id="1bc96d8f-64d4-4eb3-9e8e-df8cd0afc528" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.QuestionsControllerTests" name="GetMyQuestions_RequiresAuth" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AuthControllerTests.ResetPassword_Returns_BadRequest_For_Invalid" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="0622f5ee-afa6-6e5c-3701-7d0cbb42e776">
+      <Execution id="1aa0ca06-95b2-465f-8ebd-b777a35e4152" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AuthControllerTests" name="ResetPassword_Returns_BadRequest_For_Invalid" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetUsers_RequiresAuth" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="6078e5ec-bd9c-270f-4c38-9f310e2ef87c">
+      <Execution id="e07c4691-fa3b-4480-bef4-af3eed8279fd" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AdminControllerTests" name="Admin_GetUsers_RequiresAuth" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetAnswers_RequiresAuth" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="2f1d413a-b5f9-d7d5-9e00-d83a9d477e48">
+      <Execution id="d2dd076b-914a-43a3-9d02-f54ac09b741c" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AdminControllerTests" name="Admin_GetAnswers_RequiresAuth" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.QuestionsControllerTests.GetQuestions_Returns_OK" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="027bbac3-c1c8-8cb0-1437-ad667d639c3f">
+      <Execution id="897ae536-d585-495e-b14e-43230c0df927" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.QuestionsControllerTests" name="GetQuestions_Returns_OK" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchUserRole_Unauthorized_By_Default" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="dd80fd23-98b6-c4d6-5663-d5649fc7d064">
+      <Execution id="81573d35-0c14-44ea-aa92-f2462f6a30c9" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AdminControllerTests" name="Admin_PatchUserRole_Unauthorized_By_Default" />
+    </UnitTest>
+    <UnitTest name="DoConnect.Tests.Controllers.AnswersControllerTests.GetMyAnswers_RequiresAuth" storage="c:\users\adila\desktop\doconnect\doconnect.tests\bin\debug\net9.0\doconnect.tests.dll" id="b5acb4f6-f289-dd47-efbf-bf3701e548a2">
+      <Execution id="cb03ce35-a884-4b84-8147-8e4117b11372" />
+      <TestMethod codeBase="C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\bin\Debug\net9.0\DoConnect.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DoConnect.Tests.Controllers.AnswersControllerTests" name="GetMyAnswers_RequiresAuth" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="dd80fd23-98b6-c4d6-5663-d5649fc7d064" executionId="81573d35-0c14-44ea-aa92-f2462f6a30c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c8a222b-4ec3-2493-0fb0-25058efb1be8" executionId="5ac99910-fa50-4b56-9b7f-cd30f069acce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5acb4f6-f289-dd47-efbf-bf3701e548a2" executionId="cb03ce35-a884-4b84-8147-8e4117b11372" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ddbcbd94-9d65-d57d-a04c-81d3c138d52a" executionId="c9bbce3c-44c0-406e-9a5d-46ad488d1271" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a4dd27fc-0a34-113a-32b1-364a7bea8e67" executionId="1cf61ac4-29d5-427e-8644-cbbd1d344a84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de8fddaf-48ab-19fd-eef1-fb515af5da96" executionId="c19150ca-9332-4bdc-a29d-dd7abe74fb4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f62700c-9cba-cef3-a873-6177b14e5070" executionId="448c9cfd-e974-422e-8fc8-a483bcc4f350" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6078e5ec-bd9c-270f-4c38-9f310e2ef87c" executionId="e07c4691-fa3b-4480-bef4-af3eed8279fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="027bbac3-c1c8-8cb0-1437-ad667d639c3f" executionId="897ae536-d585-495e-b14e-43230c0df927" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f98e540-bd71-175a-3bf5-2c3fb3204456" executionId="f720b891-a51a-409d-b2b6-8c76749c6f05" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="90ddd418-db44-d45d-74a3-4195221fd986" executionId="d2d86845-2a92-4309-ad97-bb5e0c0ec56a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="28a79241-283a-72e7-f61d-ef42b324c316" executionId="c774e44d-949a-4cef-9b5e-addb774cb424" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7aa4532-d7b3-d8d5-09af-02735ea41855" executionId="0fd66138-43b7-474b-b6a9-2b069d684abc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7bd3d9bb-d79e-c9c9-572e-a4f2018935c1" executionId="5a6c8c45-f298-45b8-a823-075afabd0ca4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5f1bed58-8e17-8e97-ec7f-38a02a77e504" executionId="67f15e36-a528-427d-b0fe-16f419c9836b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff83a0fa-bec4-611e-dcbf-95f4a3a592d9" executionId="f2ada6b5-a324-4344-bde8-38ee09404d1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0622f5ee-afa6-6e5c-3701-7d0cbb42e776" executionId="1aa0ca06-95b2-465f-8ebd-b777a35e4152" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2ccf8fe-45ed-1b9a-7f55-20bb538599a7" executionId="1bc96d8f-64d4-4eb3-9e8e-df8cd0afc528" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f6d7bed9-4cda-1e3d-6f39-e2616ee0ca7f" executionId="a1df3886-86f3-4dac-9cfd-07588d6e6867" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f1d413a-b5f9-d7d5-9e00-d83a9d477e48" executionId="d2dd076b-914a-43a3-9d02-f54ac09b741c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="20" executed="20" passed="0" failed="20" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.8)&#xD;
+[xUnit.net 00:00:00.22]   Discovering: DoConnect.Tests&#xD;
+[xUnit.net 00:00:00.32]   Discovered:  DoConnect.Tests&#xD;
+[xUnit.net 00:00:00.33]   Starting:    DoConnect.Tests&#xD;
+[xUnit.net 00:00:00.46]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.46]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.46]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.46]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.46]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.46]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.46]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.46]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.46]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\QuestionsControllerTests.cs(39,0): at DoConnect.Tests.Controllers.QuestionsControllerTests.GetMyQuestions_RequiresAuth()&#xD;
+[xUnit.net 00:00:00.46]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.47]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.47]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.47]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.47]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.47]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.47]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.47]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.47]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.47]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\UsersControllerTests.cs(14,0): at DoConnect.Tests.Controllers.UsersControllerTests.Me_RequiresAuth()&#xD;
+[xUnit.net 00:00:00.47]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.47]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.47]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.47]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.47]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.47]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.47]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.47]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.47]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.47]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AnswersControllerTests.cs(23,0): at DoConnect.Tests.Controllers.AnswersControllerTests.GetMyAnswers_RequiresAuth()&#xD;
+[xUnit.net 00:00:00.47]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.48]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.48]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.48]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.48]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\QuestionsControllerTests.cs(23,0): at DoConnect.Tests.Controllers.QuestionsControllerTests.GetQuestions_Returns_OK()&#xD;
+[xUnit.net 00:00:00.48]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.48]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.48]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.48]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.48]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AnswersControllerTests.cs(15,0): at DoConnect.Tests.Controllers.AnswersControllerTests.PostAnswer_RequiresAuth_Or_BadRequest()&#xD;
+[xUnit.net 00:00:00.48]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.48]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.48]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.48]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.48]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\QuestionsControllerTests.cs(15,0): at DoConnect.Tests.Controllers.QuestionsControllerTests.PostQuestion_RequiresAuth_Or_BadRequest()&#xD;
+[xUnit.net 00:00:00.48]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.48]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.48]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.48]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.48]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\QuestionsControllerTests.cs(31,0): at DoConnect.Tests.Controllers.QuestionsControllerTests.GetQuestionById_NotFound_For_Missing()&#xD;
+[xUnit.net 00:00:00.48]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.48]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.48]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.48]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.48]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.48]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs(79,0): at DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteUser_Unauthorized_By_Default()&#xD;
+[xUnit.net 00:00:00.48]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.54]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.54]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.54]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.54]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.54]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.54]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.54]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.54]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.54]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AuthControllerTests.cs(40,0): at DoConnect.Tests.Controllers.AuthControllerTests.ResetPassword_Returns_BadRequest_For_Invalid()&#xD;
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.54]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.54]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.54]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.54]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.54]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.54]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.54]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.54]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.54]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs(31,0): at DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetUsers_RequiresAuth()&#xD;
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.54]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.55]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.55]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.55]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AuthControllerTests.cs(15,0): at DoConnect.Tests.Controllers.AuthControllerTests.Register_Returns_BadRequest_For_Empty_Payload()&#xD;
+[xUnit.net 00:00:00.55]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.55]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.55]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.55]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.55]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AuthControllerTests.cs(32,0): at DoConnect.Tests.Controllers.AuthControllerTests.ForgotPassword_Returns_404_Or_BadRequest()&#xD;
+[xUnit.net 00:00:00.55]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.55]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.55]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.55]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.55]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AuthControllerTests.cs(24,0): at DoConnect.Tests.Controllers.AuthControllerTests.Login_Returns_401_Or_BadRequest_For_Invalid()&#xD;
+[xUnit.net 00:00:00.55]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.55]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.55]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.55]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.56]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.56]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs(55,0): at DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteQuestion_Unauthorized_By_Default()&#xD;
+[xUnit.net 00:00:00.56]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.56]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.56]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.56]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.56]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs(63,0): at DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteAnswer_Unauthorized_By_Default()&#xD;
+[xUnit.net 00:00:00.56]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.56]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.56]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.56]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.56]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs(15,0): at DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetQuestions_RequiresAuth()&#xD;
+[xUnit.net 00:00:00.56]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.56]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.56]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.56]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.56]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.56]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs(39,0): at DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchQuestionStatus_Unauthorized_By_Default()&#xD;
+[xUnit.net 00:00:00.56]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.56]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.57]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.57]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.57]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs(71,0): at DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchUserRole_Unauthorized_By_Default()&#xD;
+[xUnit.net 00:00:00.57]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.57]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.57]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.57]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.57]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs(47,0): at DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchAnswerStatus_Unauthorized_By_Default()&#xD;
+[xUnit.net 00:00:00.57]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.57]       System.InvalidOperationException : The provided Type 'Object' does not belong to an assembly with an entry point. A common cause for this error is providing a Type from a class library.&#xD;
+[xUnit.net 00:00:00.57]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureDepsFile()&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.EnsureServer()&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateDefaultClient(Uri baseAddress, DelegatingHandler[] handlers)&#xD;
+[xUnit.net 00:00:00.57]            at Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1.CreateClient(WebApplicationFactoryClientOptions options)&#xD;
+[xUnit.net 00:00:00.57]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Testing\CustomWebAppFactory.cs(96,0): at DoConnect.Tests.Testing.CustomWebAppFactory.CreateClient()&#xD;
+[xUnit.net 00:00:00.57]         C:\Users\adila\Desktop\DoConnect\DoConnect.Tests\Controllers\AdminControllerTests.cs(23,0): at DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetAnswers_RequiresAuth()&#xD;
+[xUnit.net 00:00:00.57]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:00.57]   Finished:    DoConnect.Tests&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.4716536+05:30">
+        <Text>[xUnit.net 00:00:00.46]     DoConnect.Tests.Controllers.QuestionsControllerTests.GetMyQuestions_RequiresAuth [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.4816257+05:30">
+        <Text>[xUnit.net 00:00:00.47]     DoConnect.Tests.Controllers.UsersControllerTests.Me_RequiresAuth [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.4838745+05:30">
+        <Text>[xUnit.net 00:00:00.47]     DoConnect.Tests.Controllers.AnswersControllerTests.GetMyAnswers_RequiresAuth [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.4865563+05:30">
+        <Text>[xUnit.net 00:00:00.48]     DoConnect.Tests.Controllers.QuestionsControllerTests.GetQuestions_Returns_OK [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.4883991+05:30">
+        <Text>[xUnit.net 00:00:00.48]     DoConnect.Tests.Controllers.AnswersControllerTests.PostAnswer_RequiresAuth_Or_BadRequest [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.4898488+05:30">
+        <Text>[xUnit.net 00:00:00.48]     DoConnect.Tests.Controllers.QuestionsControllerTests.PostQuestion_RequiresAuth_Or_BadRequest [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.4916437+05:30">
+        <Text>[xUnit.net 00:00:00.48]     DoConnect.Tests.Controllers.QuestionsControllerTests.GetQuestionById_NotFound_For_Missing [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.4929174+05:30">
+        <Text>[xUnit.net 00:00:00.48]     DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteUser_Unauthorized_By_Default [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6387492+05:30">
+        <Text>[xUnit.net 00:00:00.54]     DoConnect.Tests.Controllers.AuthControllerTests.ResetPassword_Returns_BadRequest_For_Invalid [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6396113+05:30">
+        <Text>[xUnit.net 00:00:00.54]     DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetUsers_RequiresAuth [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6409064+05:30">
+        <Text>[xUnit.net 00:00:00.54]     DoConnect.Tests.Controllers.AuthControllerTests.Register_Returns_BadRequest_For_Empty_Payload [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6421603+05:30">
+        <Text>[xUnit.net 00:00:00.55]     DoConnect.Tests.Controllers.AuthControllerTests.ForgotPassword_Returns_404_Or_BadRequest [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6432243+05:30">
+        <Text>[xUnit.net 00:00:00.55]     DoConnect.Tests.Controllers.AuthControllerTests.Login_Returns_401_Or_BadRequest_For_Invalid [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6442054+05:30">
+        <Text>[xUnit.net 00:00:00.55]     DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteQuestion_Unauthorized_By_Default [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6479420+05:30">
+        <Text>[xUnit.net 00:00:00.56]     DoConnect.Tests.Controllers.AdminControllerTests.Admin_DeleteAnswer_Unauthorized_By_Default [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6487982+05:30">
+        <Text>[xUnit.net 00:00:00.56]     DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetQuestions_RequiresAuth [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6497474+05:30">
+        <Text>[xUnit.net 00:00:00.56]     DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchQuestionStatus_Unauthorized_By_Default [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6549809+05:30">
+        <Text>[xUnit.net 00:00:00.56]     DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchUserRole_Unauthorized_By_Default [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6558689+05:30">
+        <Text>[xUnit.net 00:00:00.57]     DoConnect.Tests.Controllers.AdminControllerTests.Admin_PatchAnswerStatus_Unauthorized_By_Default [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="ADILAKSHMI-RAJU" outcome="Error" timestamp="2025-09-07T18:30:09.6585251+05:30">
+        <Text>[xUnit.net 00:00:00.57]     DoConnect.Tests.Controllers.AdminControllerTests.Admin_GetAnswers_RequiresAuth [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

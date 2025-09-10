@@ -1,0 +1,77 @@
+<app-toast></app-toast>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow p-4">
+        <h3 class="text-center mb-4">Register</h3>
+
+        <form [formGroup]="form" (ngSubmit)="register()">
+          <!-- First Name -->
+          <div class="mb-3">
+            <label>First Name</label>
+            <input type="text" formControlName="firstName" class="form-control"
+              [ngClass]="{ 'is-invalid': form.controls.firstName.touched && form.controls.firstName.invalid }" />
+            <div class="invalid-feedback">First Name is required</div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="mb-3">
+            <label>Last Name</label>
+            <input type="text" formControlName="lastName" class="form-control"
+              [ngClass]="{ 'is-invalid': form.controls.lastName.touched && form.controls.lastName.invalid }" />
+            <div class="invalid-feedback">Last Name is required</div>
+          </div>
+
+          <!-- Username -->
+          <div class="mb-3">
+            <label>Username</label>
+            <input type="text" formControlName="username" class="form-control"
+              [ngClass]="{ 'is-invalid': form.controls.username.touched && form.controls.username.invalid }" />
+            <div class="invalid-feedback">Username is required</div>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" formControlName="email" class="form-control"
+              [ngClass]="{ 'is-invalid': form.controls.email.touched && form.controls.email.invalid }" />
+            <div class="invalid-feedback">Enter a valid email</div>
+          </div>
+
+          <!-- Password -->
+          <div class="mb-3">
+            <label>Password</label>
+            <div class="input-group">
+              <input [type]="showPassword ? 'text' : 'password'" formControlName="password" class="form-control"
+                [ngClass]="{ 'is-invalid': form.controls.password.touched && form.controls.password.invalid }" />
+              <button type="button" class="btn btn-outline-secondary" (click)="showPassword = !showPassword">
+                <i class="bi" [ngClass]="showPassword ? 'bi-eye-slash' : 'bi-eye'"></i>
+              </button>
+              <div class="invalid-feedback">
+                Password is required (min 6 characters)
+              </div>
+            </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="mb-3">
+            <label>Confirm Password</label>
+            <div class="input-group">
+              <input [type]="showConfirmPassword ? 'text' : 'password'" formControlName="confirmPassword"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': form.errors?.['passwordMismatch'] && form.controls.confirmPassword.touched }" />
+              <button type="button" class="btn btn-outline-secondary" (click)="showConfirmPassword = !showConfirmPassword">
+                <i class="bi" [ngClass]="showConfirmPassword ? 'bi-eye-slash' : 'bi-eye'"></i>
+              </button>
+              <div class="invalid-feedback">Passwords must match</div>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <button class="btn btn-primary w-100" type="submit" [disabled]="form.invalid">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

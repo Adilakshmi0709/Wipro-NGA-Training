@@ -1,0 +1,86 @@
+<div class="container mt-4">
+  <h3 class="mb-4">My Questions</h3>
+
+  <!-- Loader -->
+  <div *ngIf="loading" class="text-center">
+    <div class="spinner-border text-primary"></div>
+  </div>
+
+  <!-- No questions -->
+  <div *ngIf="!loading && questions.length === 0" class="alert alert-info">
+    You haven't asked any questions yet.
+  </div>
+
+  <!-- Questions with answers -->
+  <div class="row" *ngIf="!loading && questions.length > 0">
+    <div class="col-md-12 mb-3" *ngFor="let q of questions">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ q.title }}</h5>
+          <p class="card-text">{{ q.text }}</p>
+
+          <!-- ✅ Question status -->
+          <span class="badge ms-2"
+                [ngClass]="{
+                  'bg-success': q.status === 'Approved',
+                  'bg-warning': q.status === 'Pending',
+                  'bg-danger': q.status === 'Rejected'
+                }">
+            {{ q.status }}
+          </span>
+
+          <!-- ✅ Question images -->
+          <div class="mt-2" *ngIf="q.images && q.images.length > 0">
+            <div class="d-flex flex-wrap">
+              <img *ngFor="let img of q.images"
+                   [src]="apiBaseUrl + img"
+                   class="img-thumbnail me-2 mb-2"
+                   style="max-width: 150px; max-height: 150px; cursor: pointer;"
+                   (click)="openPreview(apiBaseUrl + img)">
+            </div>
+          </div>
+
+          <!-- ✅ Answers section -->
+          <div class="mt-3">
+            <h6>Answers:</h6>
+            <div *ngIf="!q.answers || q.answers.length === 0" class="text-muted">
+              No answers yet.
+            </div>
+            <ul class="list-group" *ngIf="q.answers && q.answers.length > 0">
+              <li class="list-group-item" *ngFor="let a of q.answers">
+                <p>{{ a.text }}</p>
+
+                <!-- ✅ Answer status -->
+                <span class="badge ms-2"
+                      [ngClass]="{
+                        'bg-success': a.status === 'Approved',
+                        'bg-warning': a.status === 'Pending',
+                        'bg-danger': a.status === 'Rejected'
+                      }">
+                  {{ a.status }}
+                </span>
+
+                <!-- ✅ Answer images -->
+                <div class="mt-2" *ngIf="a.images && a.images.length > 0">
+                  <div class="d-flex flex-wrap">
+                    <img *ngFor="let img of a.images"
+                         [src]="apiBaseUrl + img"
+                         class="img-thumbnail me-2 mb-2"
+                         style="max-width: 150px; max-height: 150px; cursor: pointer;"
+                         (click)="openPreview(apiBaseUrl + img)">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fullscreen Image Preview -->
+<div *ngIf="previewImage" class="image-preview-overlay" (click)="closePreview()">
+  <img [src]="previewImage" class="image-preview" />
+</div>

@@ -1,0 +1,76 @@
+<div class="container mt-4">
+
+  <!-- Question list -->
+  <div *ngIf="!selectedQuestion">
+    <h3>All Questions</h3>
+
+    <div *ngIf="loading" class="text-center">
+      <div class="spinner-border text-primary"></div>
+    </div>
+
+    <div *ngFor="let q of questions" class="card shadow-sm mb-3">
+      <div class="card-body">
+        <h5>{{ q.title }}</h5>
+        <p>{{ q.text }}</p>
+        <button class="btn btn-primary" (click)="viewQuestion(q.questionId)">
+          Answer
+        </button>
+      </div>
+    </div>
+
+    <div *ngIf="!loading && questions.length === 0" class="alert alert-info">
+      No questions available.
+    </div>
+  </div>
+
+  <!-- Question detail with answer form -->
+  <div *ngIf="selectedQuestion">
+    <button class="btn btn-link mb-3" (click)="backToList()">
+      ← Back to Questions
+    </button>
+
+    <h3>{{ selectedQuestion.title }}</h3>
+    <p>{{ selectedQuestion.text }}</p>
+
+    <!-- Question images -->
+    <div *ngIf="selectedQuestion.images?.length > 0" class="mt-3">
+      <h6>Images:</h6>
+      <div class="d-flex flex-wrap gap-2">
+        <img *ngFor="let img of selectedQuestion.images"
+             [src]="apiBaseUrl + img"
+             class="img-thumbnail"
+             style="max-width: 200px;  cursor: pointer;"
+             (click)="openPreview(apiBaseUrl + img)">
+      </div>
+    </div>
+
+    <!-- Answer form -->
+    <div class="mt-4">
+      <h5>Your Answer</h5>
+      <form (ngSubmit)="submitAnswer()">
+        <div class="mb-3">
+          <textarea [(ngModel)]="answerText"
+                    name="answerText"
+                    rows="4"
+                    class="form-control"
+                    placeholder="Write your answer..."></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Upload Image (optional)</label>
+          <input type="file"
+                 (change)="onFileChange($event)"
+                 class="form-control"/>
+          <div *ngIf="imageError" class="text-danger mt-1">
+            {{ imageError }}
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit Answer</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div *ngIf="previewImage" class="image-preview-overlay" (click)="closePreview()">
+  <img [src]="previewImage" class="image-preview" />
+</div>

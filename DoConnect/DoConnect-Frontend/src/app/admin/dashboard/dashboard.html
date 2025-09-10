@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="row">
+    
+    <div class="col-12 bg-light p-2 d-md-none d-flex justify-content-between align-items-center">
+      <button class="btn btn-outline-primary" (click)="toggleSidebar()">☰ Menu</button>
+      <h5 class="mb-0">Admin</h5>
+    </div>
+
+    <!-- Sidebar -->
+    <div [ngClass]="sidebarOpen ? 'col-12 col-md-3 col-lg-2 p-0 sidebar-wrapper' : 'd-none d-md-block col-md-3 col-lg-2 p-0 sidebar-wrapper'">
+      <app-admin-sidebar></app-admin-sidebar>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9 col-lg-10 p-4">
+      <!-- Hero Welcome Card -->
+      <div class="card shadow-sm p-5 text-center bg-light border-0">
+        <h1 class="display-5 fw-bold mb-3">
+          Welcome, {{ username }}!
+        </h1>
+        <p class="lead text-muted mb-4">
+          You are logged in as <strong>{{ role }}</strong>.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-4">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <h4 class="fw-bold">Manage Questions</h4>
+              <p class="text-muted">Review, approve, or delete user questions.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <h4 class="fw-bold">Manage Answers</h4>
+              <p class="text-muted">Moderate and validate submitted answers.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <h4 class="fw-bold">Manage Users</h4>
+              <p class="text-muted">Control roles an manage users.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

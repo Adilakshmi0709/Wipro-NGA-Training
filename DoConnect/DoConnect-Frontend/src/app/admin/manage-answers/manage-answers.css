@@ -1,0 +1,78 @@
+.sidebar-wrapper {
+  transition: all 0.3s ease;
+  z-index: 1050; /* keep sidebar above content on mobile */
+}
+.preview-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+/* Restrict Answer column width */
+/* Answer column with scroll */
+.answer-column {
+  max-width: 750px;
+  vertical-align: top;   /* keep aligned */
+  padding: 8px;
+}
+
+.answer-scroll {
+  max-height: 200px;     /* scroll limit */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 6px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.answer-content {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Keep Actions column fixed */
+td.actions-column {
+  width: 180px;  /* enough for 3 buttons */
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Align buttons better */
+td.actions-column button {
+  margin: 2px;
+}
+
+.table th:nth-child(2), /* Question */
+.table td:nth-child(2) {
+  width: 150px;   /* adjust as needed */
+}
+
+ /* Status */
+.table td:nth-child(3) {
+  width: 110px;
+  text-align: center;
+}
+
+.table th:nth-child(4), /* User */
+.table td:nth-child(4) {
+  width: 100px;
+}
+
+.table th:first-child,
+.table td.answer-column {
+  width: auto; /* flexible */
+}

@@ -1,0 +1,21 @@
+.sidebar {
+  min-width: 220px;
+  height: 100vh;
+}
+
+.sidebar .nav-link {
+  color: #dcdcdc;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057;
+  color: #fff;
+}
+
+.sidebar .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff !important;
+}
+
