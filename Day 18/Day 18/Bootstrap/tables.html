@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Table with Bootstrap 3</title>
+
+  <!-- Bootstrap 3 CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .panel {
+      margin-top: 30px;
+    }
+    .panel-heading {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading text-center">User Information Table</div>
+    <div class="panel-body">
+      <p class="text-muted text-center">The <code>.table</code> class adds basic styling to a table with light padding and dividers.</p>
+
+      <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Rushikesh Magdum</td>
+            <td>rushikesh@example.com</td>
+            <td><span class="label label-success">Active</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Anita Desai</td>
+            <td>anita@example.com</td>
+            <td><span class="label label-warning">Pending</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Rahul Verma</td>
+            <td>rahul@example.com</td>
+            <td><span class="label label-danger">Inactive</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
