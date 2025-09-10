@@ -1,0 +1,12 @@
+<div class="cart">
+  <h2>Shopping Cart</h2>
+  <p>Items in cart: {{ cartItems.length }}</p>
+  <ul>
+    @for (item of cartItems; track item) {
+      <li>
+        {{ item }} 
+        <button (click)="removeItem(item)">Remove</button>
+      </li>
+    }
+  </ul>
+</div>

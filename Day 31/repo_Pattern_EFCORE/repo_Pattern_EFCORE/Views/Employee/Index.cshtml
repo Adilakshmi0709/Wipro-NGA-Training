@@ -1,0 +1,30 @@
+@model IEnumerable<repo_Pattern_EFCORE.Models.Employee>
+
+<h2>Employees</h2>
+<p><a asp-action="Create" class="btn btn-primary">Add Employee</a></p>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Position</th>
+        <th>Salary</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+@foreach (var emp in Model)
+{
+    <tr>
+        <td>@emp.Name</td>
+        <td>@emp.Department</td>
+        <td>@emp.Position</td>
+        <td>@emp.Salary</td>
+        <td>@emp.Email</td>
+        <td>
+            <a asp-action="Details" asp-route-id="@emp.EmployeeId" class="btn btn-info">Details</a>
+            <a asp-action="Edit" asp-route-id="@emp.EmployeeId" class="btn btn-warning">Edit</a>
+            <a asp-action="Delete" asp-route-id="@emp.EmployeeId" class="btn btn-danger">Delete</a>
+        </td>
+    </tr>
+}
+</table>

@@ -1,0 +1,10 @@
+<h2>User Profile</h2>
+
+<p>@ViewBag.Message</p>
+
+<p>This is your personal profile page.</p>
+
+<form asp-controller="Account" asp-action="Logout" method="post">
+    @Html.AntiForgeryToken()
+    <button type="submit">Logout</button>
+</form>

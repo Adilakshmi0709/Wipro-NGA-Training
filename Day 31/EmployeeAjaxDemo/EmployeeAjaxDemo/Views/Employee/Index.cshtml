@@ -1,0 +1,111 @@
+@{
+    ViewData["Title"] = "Employee Management";
+}
+
+<div class="col-md-12">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Please enter the employee details below.</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group col-md-3">
+                <label>Name</label>
+                <input type="text" id="Name" class="form-control" placeholder="Enter Name" required />
+            </div>
+            <div class="form-group col-md-3">
+                <label>Department</label>
+                <input type="text" id="Department" class="form-control" placeholder="Enter Department" required />
+            </div>
+            <div class="form-group col-md-2">
+                <label>Salary</label>
+                <input type="number" id="Salary" class="form-control" placeholder="Enter Salary" required />
+            </div>
+            <div class="form-group col-md-2">
+                <label>Email</label>
+                <input type="email" id="Email" class="form-control" placeholder="Enter Email" />
+            </div>
+            <div class="form-group col-md-2">
+                <label>Position</label>
+                <input type="text" id="Position" class="form-control" placeholder="Enter Position" />
+            </div>
+            <div class="form-group col-md-2" style="margin-top:25px;">
+                <button class="btn btn-primary" id="btnSave">Add Employee</button>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <button class="btn btn-success" id="btnLoad">Load Employees</button>
+    <table id="tblEmployee" class="table table-bordered table-striped table-responsive table-hover" style="margin-top:10px;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Email</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function LoadEmployees() {
+        $("#tblEmployee tbody tr").remove();
+        $.ajax({
+            url: '/Employee/GetEmployees',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                $.each(data, function(i, emp) {
+                    var row = "<tr>" +
+                        "<td>" + emp.employeeId + "</td>" +
+                        "<td>" + emp.name + "</td>" +
+                        "<td>" + emp.department + "</td>" +
+                        "<td>" + emp.salary + "</td>" +
+                        "<td>" + emp.email + "</td>" +
+                        "<td>" + emp.position + "</td>" +
+                        "</tr>";
+                    $("#tblEmployee tbody").append(row);
+                });
+            },
+            error: function(xhr, status, error) {
+                alert("Error: " + error);
+            }
+        });
+    }
+
+    $("#btnLoad").click(function() {
+        LoadEmployees();
+    });
+
+    $("#btnSave").click(function() {
+        var empData = {
+            Name: $("#Name").val(),
+            Department: $("#Department").val(),
+            Salary: $("#Salary").val(),
+            Email: $("#Email").val(),
+            Position: $("#Position").val()
+        };
+
+        $.ajax({
+            url: '/Employee/AddEmployee',
+            type: 'POST',
+            data: empData,
+            success: function(response) {
+                alert(response.message);
+                if(response.success) {
+                    LoadEmployees(); // reload table
+                    $("#Name,#Department,#Salary,#Email,#Position").val(''); // clear inputs
+                }
+            },
+            error: function(xhr, status, error) {
+                alert("Error: " + error);
+            }
+        });
+    });
+</script>

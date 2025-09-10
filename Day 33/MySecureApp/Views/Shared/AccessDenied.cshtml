@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Access Denied";
+}
+
+<h1 class="text-danger">Access Denied</h1>
+<h2 class="text-danger">You do not have permission to view this page.</h2>
+
+<p>Please contact your administrator if you believe this is an error.</p>
+
+<a href="@Url.Action("Profile", "User")" class="btn btn-primary">Go to My Profile</a>
+<a href="@Url.Action("Logout", "Account")" class="btn btn-secondary">Logout</a>

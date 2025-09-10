@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Access Denied";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <h1 class="text-danger">🚫 Access Denied</h1>
+            <div class="alert alert-danger mt-4">
+                <h4>You do not have permission to view this page.</h4>
+                <p class="mb-0">Please contact your administrator if you believe this is an error.</p>
+            </div>
+            
+            <div class="mt-4">
+                <a href="@Url.Action("Profile", "User")" class="btn btn-primary me-2">Go to My Profile</a>
+                <a href="@Url.Action("Index", "Home")" class="btn btn-secondary me-2">Go to Home</a>
+                <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-outline-danger">Logout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

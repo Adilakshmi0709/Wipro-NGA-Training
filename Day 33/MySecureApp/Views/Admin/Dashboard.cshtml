@@ -1,0 +1,10 @@
+<h2>Admin Dashboard</h2>
+
+<p>@ViewBag.Message</p>
+
+<p>This page is only for administrators. You can see all user details here.</p>
+
+<form asp-controller="Account" asp-action="Logout" method="post">
+    @Html.AntiForgeryToken()
+    <button type="submit">Logout</button>
+</form>

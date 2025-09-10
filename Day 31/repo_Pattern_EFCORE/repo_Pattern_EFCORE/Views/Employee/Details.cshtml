@@ -1,0 +1,13 @@
+@model repo_Pattern_EFCORE.Models.Employee
+
+<h2>Employee Details</h2>
+
+<table class="table table-bordered">
+    <tr><th>Name</th><td>@Model.Name</td></tr>
+    <tr><th>Department</th><td>@Model.Department</td></tr>
+    <tr><th>Position</th><td>@Model.Position</td></tr>
+    <tr><th>Salary</th><td>@Model.Salary</td></tr>
+    <tr><th>Email</th><td>@Model.Email</td></tr>
+</table>
+
+<a asp-action="Index" class="btn btn-primary">Back to List</a>
